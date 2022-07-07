@@ -15,7 +15,7 @@ def largConsecCount(num):
                     bestPrime = sumCur
     return countMax, bestPrime
 st = time.time()
-print(largConsecCount(5000))
+print(largConsecCount(1000))
 et = time.time()
 print(f"Run Time {str(et-st)[0:6]} sec")
 """
