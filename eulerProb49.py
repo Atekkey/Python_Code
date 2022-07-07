@@ -1,3 +1,4 @@
+#SOLVED
 from Prime import *
 
 primeList = primes_top(10000)

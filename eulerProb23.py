@@ -1,3 +1,4 @@
+#SOLVED
 import math
 
 def propDiv(num):#Proper Divisors
