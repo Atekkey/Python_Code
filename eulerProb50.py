@@ -33,3 +33,6 @@ Ceil: 30000 | Prime: 28697 | Consec: 108 | Run Time 2.2095 sec | Q = 600.0
 Ceil: 40000 | Prime: 38921 | Consec: 124 | Run Time 3.1374 sec | Q = 2000
 
 """
+#Idea, pick a num value, then slowly increase Q for that num value until the expression changes.
+#Use the Q values that barely fall into the correct outcome in order to create a linear regression model
+# that predicts the best optimized Q for a given num
