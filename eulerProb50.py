@@ -39,6 +39,7 @@ Ceil: 30000 | Prime: 28697 | Consec: 108 | startPrime: 2 | Run Time 1.8204 sec |
 Ceil: 40000 | Prime: 38921 | Consec: 124 | startPrime: 2 | Run Time 2.9122 sec | Q = 3200
 Ceil: 100000 | Prime: 92951 | Consec: 183 | startPrime: 3 | Run Time 17.747 sec | Q = 4500
 Ceil: 200000 | Prime: 182107 | Consec: 249 | startPrime: 3 | Run Time 69.920 sec | Q = 5000
+Ceil: 300000 | Prime: 287137 | Consec: 308 | startPrime: 2 | Run Time 125.48 sec | Q = 8000
 """
 #Idea, pick a num value, then slowly increase Q for that num value until the expression changes.
 #Use the Q values that barely fall into the correct outcome in order to create a linear regression model
