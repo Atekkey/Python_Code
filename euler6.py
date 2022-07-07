@@ -12,7 +12,7 @@ def primes_top(topNum):
         if(prime_check(x)==True):
             pList.append(x)
     return pList
-
+    
 primeList = primes_top(100000)
 count = 0
 for prime in primeList:

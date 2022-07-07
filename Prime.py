@@ -20,7 +20,7 @@ def prime_factors(num):
 def primes_pos(pos):
     pList = [2,3]
     posCount = 2
-    prime = 3
+    prime = 2
     while(posCount!=pos):
         prime += 2
         primeCheck = True
