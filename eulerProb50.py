@@ -1,4 +1,4 @@
-#UNSOLVED
+#SOLVED
 from Prime import *
 import time
 import math
@@ -23,7 +23,7 @@ def largConsecCount(num, Q):
                     bestI = i
     return countMax, bestPrime, Q, num, pList[bestI]
 st = time.time()
-tuple = largConsecCount(100000, 5)
+tuple = largConsecCount(100000, 15)
 #Q is a coeff that might make it more efficient.  range( int((1/Q)*len(pList)-1) )
 #Q=30 has proven to work for 1k-->10k . Same with Q = 4*math.log(num)
 #
@@ -40,5 +40,7 @@ Ceil: 30000 | Prime: 28697 | Consec: 108 | startPrime: 2 | Run Time 1.8204 sec
 Ceil: 40000 | Prime: 38921 | Consec: 124 | startPrime: 2 | Run Time 2.9122 sec 
 Ceil: 100000 | Prime: 92951 | Consec: 183 | startPrime: 3 | Run Time 14.804 sec | Q = 5
 Ceil: 200000 | Prime: 182107 | Consec: 249 | startPrime: 3 | Run Time 69.920 sec 
-Ceil: 300000 | Prime: 287137 | Consec: 308 | startPrime: 2 | Run Time 125.48 sec 
+Ceil: 300000 | Prime: 287137 | Consec: 308 | startPrime: 2 | Run Time 125.48 sec
+
+Ceil: 1000000 | Prime: 997651 | Consec: 543 | startPrime: 7 | Run Time 518.70 sec | Q = 15
 """
