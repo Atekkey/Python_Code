@@ -1,4 +1,4 @@
-#UNSOLVED
+#SOLVED
 from Prime import *
 import time
 import math

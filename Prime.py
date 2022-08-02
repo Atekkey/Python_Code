@@ -14,7 +14,6 @@ def prime_factors(num):
             pfList.append(x)
             num = num/x
     return pfList
-    print(pfList)
 
 
 def primes_pos(pos):
@@ -31,7 +30,8 @@ def primes_pos(pos):
         if(primeCheck==True):
             posCount +=1
             pList.append(prime)
-    print(pList)
+    #print(pList)
+    return pList
 
 def prime_check(num):
     checkBool = True
@@ -48,6 +48,7 @@ def primes_top(topNum):
             pList.append(x)
     #print(pList)
     return pList
+
 def GCF(A, B):
     for i in range(min(A,B), 0, -1):
         if(A%i==0 and B%i==0):
@@ -60,6 +61,7 @@ def relPrimeList(num):
         if(GCF(num, i)==1):
             relPrime.add(i)
     return relPrime
+
 #print(primes_top(1000000))
 #print(primes_pos(1000))
 #print(prime_factors(9883542))
