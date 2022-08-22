@@ -1,4 +1,6 @@
 import math
+import csv
+
 def factors(num):
     fList = []
     for x in range(2, int(0.5*num)+3):
@@ -30,7 +32,6 @@ def primes_pos(pos):
         if(primeCheck==True):
             posCount +=1
             pList.append(prime)
-    #print(pList)
     return pList
 
 def prime_check(num):
@@ -62,6 +63,13 @@ def relPrimeList(num):
             relPrime.add(i)
     return relPrime
 
+#Done, dont use again
+"""def writeTo():
+    f = open('millionPrimes.csv', 'w')
+    writer = csv.writer(f)
+    writer.writerow(primes_top(10**6))
+    f.close()
+    print("done with mil")
+"""
 #print(primes_top(1000000))
-#print(primes_pos(1000))
 #print(prime_factors(9883542))
