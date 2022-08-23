@@ -21,8 +21,8 @@ def prime_factors(num):
 def primes_pos(pos):
     pList = [2,3]
     posCount = 2
-    prime = 2
-    while(posCount!=pos):
+    prime = 3
+    while(posCount<=pos):
         prime += 2
         primeCheck = True
         for x in range(3, int(0.5*prime)+1):
@@ -32,8 +32,9 @@ def primes_pos(pos):
         if(primeCheck==True):
             posCount +=1
             pList.append(prime)
+            #print(pList)
     return pList
-
+    
 def prime_check(num):
     checkBool = True
     for x in range(2, int(0.5*num)+1):
