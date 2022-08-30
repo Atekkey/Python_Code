@@ -12,10 +12,11 @@ def checkPalin(main):
         if(main[i]!=main[len(main)-1 - i]):
             return False
     return True
-
+"""
 sum = 0
 for num in range(10**6):
     st = str(num)
     if(checkPalin(st) and checkPalin(pBin(num))):
         sum += num
 print("\n", sum)
+"""
