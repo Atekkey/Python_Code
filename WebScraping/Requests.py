@@ -11,5 +11,5 @@ soup = BeautifulSoup(src, 'lxml')
 
 links = soup.find_all("a")
 for link in links:
-    if(re.search("world", link)==true):
+    if(re.search("world", link)==True):
         print(link)

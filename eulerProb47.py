@@ -1,3 +1,4 @@
+#SOLVED (See V2)
 """find first 4 consecutive numbers to have 4 distinct prime factors? """
 from Prime import *
 import time
@@ -30,4 +31,4 @@ def consecV2(bot, top):
 et = time.time()
 print(f"{et - st} sec")"""
 #253894
-print(prime_factors(253894),prime_factors(253895),prime_factors(253896),prime_factors(253897))
+#print(prime_factors(253894),prime_factors(253895),prime_factors(253896),prime_factors(253897))

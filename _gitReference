@@ -1,5 +1,5 @@
-# Git commands
-### Use in Terminal
+Git commands
+Use in Terminal
 git add filename.py 
 {OR} git add --all
 git status (to check)

@@ -1,0 +1,38 @@
+eulerProb37.py | Pickling, a way to store data gained from code to reuse it in the code, 
+can be helpful for maintaining long generated lists. Read a csv then store it in pickle, so that
+you don't have to load the csv every time.
+
+Prime.py | Different functions for primes and factors. 
+            writeTo() writes a list to a csv file
+
+eulerProb81.py | Time function, 
+                Opening a FILE and using splits to turn it into a lists
+
+eulerProb67.py | recursion, 
+                replacing string in string, print(f)
+
+eulerProb36.py | pBin removes the 0b from binary, 
+                checkPalin checks if a string is a palindrome
+
+eulerProb18.py | Binary
+
+eulerProb35.py | allCircles, a list of a string rewritten circularly  
+
+eulerProb34.py | digitList
+
+eulerProb33.py | permutations
+
+eulerProb32.py | checkPandigital
+
+eulerProb29.py | permutations
+
+eulerProb26.py | Decimals
+
+eulerProb23.py | Proper Divisors
+
+eulerProb42.py | Read a .txt file, convert chars to ints
+
+eulerProb56.py | Digit Sum, Digit List
+
+eulerProb98.py | String to CharList,  
+                 Check if strings are anagrams and/or the same

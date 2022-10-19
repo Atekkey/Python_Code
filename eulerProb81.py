@@ -12,14 +12,14 @@ def fileToList(fileName):
         for i in range(len(lines[j])):
             arr[j][i] = int(lines[j][i])
     return arr
-arr = fileToList('p081_matrix.txt')
+#   arr = fileToList('p081_matrix.txt')
 #print(arr[79][79])
-arr1 = arr.copy()
+#   arr1 = arr.copy()
 #Idea on a smaller scale: 
 # [2, 3, 5] --> [2, 3, 5] --> [2, 3, 9]  --> [2, 12, 0] ANS = 14
 # [3, 9, 2] --> [3, 9, 4] --> [3, 13, 0] --> [14, 0, 0]
 # [4, 5, 2] --> [4, 7, 0] --> [11, 0, 0] --> [0, 0, 0]
-
+"""
 addMin = lambda row, col, arr: min(arr[row+1][col], arr[row][col+1])
 sList = []
 for iter in range (1, 159):
@@ -43,4 +43,4 @@ print(int(arr[0][0]))
 #Correct, Answer = 427337
 
 et = time.time()
-print(f"Run Time {str(et-st)[0:6]} sec")
+print(f"Run Time {str(et-st)[0:6]} sec") """
