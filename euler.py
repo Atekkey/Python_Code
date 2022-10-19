@@ -1,4 +1,3 @@
-import tenserflow as tf
 a = str(2**1000)
 alen = len(a)
 sum = 0
