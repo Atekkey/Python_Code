@@ -2,6 +2,17 @@
 # (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.
 
 #Basic Func "isFamily" input, two nums, output if they are close 
+import pickle
+import pandas as pd
+
+"""pList = list(pd.read_csv('millionPrimes.csv'))
+with open("test", "wb") as fp:   #Pickling
+    pickle.dump(pList, fp)"""
+
+
+
+with open("test", "rb") as fp:   # Unpickling
+    pList = pickle.load(fp)
 
 def isFamily(num1, num2):
     n1s, n2s = str(num1), str(num2)
@@ -21,5 +32,9 @@ def isFamily(num1, num2):
     if(repDigBool):
         print("Family:", n1s, n2s)
         print("repDig index:", indList)
-    return 
-isFamily(56003, 56223)
+    return
+
+fiveList = pList
+while(len(str(pList[0]))<5):
+    del fiveList[0]
+print(fiveList[0:10])
