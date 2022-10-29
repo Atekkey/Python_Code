@@ -36,3 +36,5 @@ eulerProb56.py | Digit Sum, Digit List
 
 eulerProb98.py | String to CharList,  
                  Check if strings are anagrams and/or the same
+                 
+eulerProb719.py| Binary permutations

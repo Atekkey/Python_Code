@@ -1,13 +1,15 @@
 import math
 import csv
-
+import time
+st = time.time()
 def factors(num):
     fList = []
-    for x in range(2, int(0.5*num)+3):
+    for x in range(int(0.5*num)+3, 1, -1): 
         if(num%x==0):
             fList.append(x)
+    #print(fList)
     return fList
-    print(fList)
+    
 
 def prime_factors(num):
     pfList = []
@@ -37,7 +39,7 @@ def primes_pos(pos):
     
 def prime_check(num):
     checkBool = True
-    for x in range(2, int(0.5*num)+1):
+    for x in range(2, int(num**0.5)+1):
         if(num%x==0):
             checkBool = False
             break
@@ -45,6 +47,7 @@ def prime_check(num):
 
 def primes_top(topNum):
     pList = [2]
+    topNum = int(topNum)
     for x in range(3,topNum,2):
         if(prime_check(x)==True):
             pList.append(x)
@@ -72,5 +75,8 @@ def relPrimeList(num):
     f.close()
     print("done with mil")
 """
-#print(primes_top(1000000))
+
+print(primes_top(10**6)[-1])
 #print(prime_factors(9883542))
+et = time.time()
+print(round(et-st , 6), " sec")
