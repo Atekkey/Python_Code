@@ -2,6 +2,10 @@
 #print(ord('a'), ord('z')) yields 97, 122
 fileName = "p059_cipher.txt"
 file = open(fileName,'r')
-line = file.readlines()
+line = file.readlines()[0]
 file.close()
-#have list of strings, need to convert to int
+lineFix = line.split(",")
+lineFixInt = []
+for l in lineFix:
+    lineFixInt.append(int(l))
+print(lineFixInt)
