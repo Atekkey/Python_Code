@@ -34,5 +34,7 @@ eulerProb42.py | Read a .txt file, convert chars to ints
 
 eulerProb56.py | Digit Sum, Digit List
 
+eulerProb59.py | Using ASCII, ord(),chr(), integer XOR (a^b)
+
 eulerProb98.py | String to CharList,  
                  Check if strings are anagrams and/or the same
