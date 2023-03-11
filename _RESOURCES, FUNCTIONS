@@ -38,3 +38,5 @@ eulerProb59.py | Using ASCII, ord(),chr(), integer XOR (a^b)
 
 eulerProb98.py | String to CharList,  
                  Check if strings are anagrams and/or the same
+                 
+eulerProb719.py| Binary permutations
