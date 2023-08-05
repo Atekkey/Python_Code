@@ -1,5 +1,5 @@
 #UNSOLVED
-import math; import time; import numpy as np
+import math; import time; #import numpy as np
 tDif = lambda t1, t2 : (str(t2 - t1)[0:6] + " sec") 
 tDifNum = lambda t1, t2 : (int((t2 - t1) * 10000))/10000
 
