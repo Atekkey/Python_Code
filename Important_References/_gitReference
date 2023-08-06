@@ -1,5 +1,6 @@
 Git commands
 Use in Terminal
+Get to repo --> cd ~/Py1-Repo/Py1
 git add filename.py 
 {OR} git add --all
 git status (to check)
