@@ -1,7 +1,7 @@
 import math
 import csv
 import time
-st = time.time()
+#st = time.time()
 def factors(num):
     fList = []
     for x in range(int(0.5*num)+3, 1, -1): 
@@ -13,7 +13,7 @@ def factors(num):
 
 def prime_factors(num):
     pfList = []
-    for x in range(2, int(0.5*num)+1):
+    for x in range(2, num):
         while(num%x==0):
             pfList.append(x)
             num = num/x
@@ -76,7 +76,8 @@ def relPrimeList(num):
     print("done with mil")
 """
 
-print(primes_top(10**6)[-1])
+
+#print(primes_top(10**6)[-1])
 #print(prime_factors(9883542))
-et = time.time()
-print(round(et-st , 6), " sec")
+#et = time.time()
+#print(round(et-st , 6), " sec")
