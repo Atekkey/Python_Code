@@ -13,4 +13,7 @@ arr2 = arr1.copy()
 arr3 = [5,0]
 #arr2[0] = 100
 #print(arr2)
-print(set(arr1) == set(arr2) == set(arr3))
+#print(set(arr1) == set(arr2) == set(arr3))
+
+
+#import wikipedia
