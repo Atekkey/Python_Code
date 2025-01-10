@@ -1,7 +1,7 @@
 import math
 import csv
 import time
-st = time.time()
+#st = time.time()
 def factors(num):
     fList = []
     for x in range(int(0.5*num)+3, 1, -1): 
@@ -38,12 +38,10 @@ def primes_pos(pos):
     return pList
     
 def prime_check(num):
-    checkBool = True
     for x in range(2, int(num**0.5)+1):
         if(num%x==0):
-            checkBool = False
-            break
-    return checkBool
+            return False
+    return True
 
 def primes_top(topNum):
     pList = [2]
@@ -77,7 +75,7 @@ def relPrimeList(num):
 """
 
 
-print(primes_top(5 * (10**5))[-1])
-#print(prime_factors(9883542))
-et = time.time()
-print(round(et-st , 6), " sec")
+# print(primes_top(5 * (10**5))[-1])
+# #print(prime_factors(9883542))
+# et = time.time()
+# print(round(et-st , 6), " sec")

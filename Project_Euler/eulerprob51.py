@@ -1,40 +1,63 @@
-#Find the smallest prime which, by replacing part of the number 
-# (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.
+## SOLVED
 
-#Basic Func "isFamily" input, two nums, output if they are close 
-import pickle
-import pandas as pd
+## Prime family
 
-"""pList = list(pd.read_csv('millionPrimes.csv'))
-with open("test", "wb") as fp:   #Pickling
-    pickle.dump(pList, fp)"""
+from Prime import prime_check
+import time
+st = time.time()
+
+def gen(topNum):
+    for kx in range(6, topNum, 6):
+        if(prime_check(kx-1)):
+            getFamily(kx-1)
+        if(prime_check(kx+1)):
+            getFamily(kx+1)
+    
+
+def getFamily(num):
+    temp = str(num)
+    digToCount = {"0" : 0, "1" : 0, "2" : 0, "3" : 0, "4" : 0, "5" : 0, "6" : 0, "7" : 0, "8" : 0, "9" : 0}
+    cont = False
+    ind = 0
+    dig = "0"
+    for i in range(len(temp)):
+        digToCount[temp[i]] += 1
+        if(digToCount[temp[i]] == 3):
+            cont = True
+            ind = i
+            dig = temp[i]
+            break
+    if(cont == False):
+        return
+    for i in range(ind, -1, -1):
+        if(temp[i] == dig):
+            temp = temp[0:i] + "x" + temp[i+1:]
+    fromX(temp)
+
+def fromX(input):
+    count = 0
+    recall = 0
+    for i in range(10):
+        if(input[0] == "x" and i == 0):
+            continue
+        temp = input
+        for j in range(len(temp)):
+            if(temp[j] == "x"):
+                temp = temp[0:j] + str(i) + temp[j+1:]
+        num = int(temp)
+        if(prime_check(num)):
+            count += 1
+        if(count == 1):
+            recall = num
+        if(i - count >= 3):
+            return
+    if(count >= 8):
+        print("FOUND AT: ", recall, " from ", input)
 
 
+### MAIN
+    
+gen(1000000)
 
-with open("test", "rb") as fp:   # Unpickling
-    pList = pickle.load(fp)
-
-def isFamily(num1, num2):
-    n1s, n2s = str(num1), str(num2)
-    while(len(n1s)>len(n2s)): #Make the lengs equal (incase of leading 0's)
-        n2s = "0" + n2s
-    while(len(n2s)>len(n1s)):
-        n1s = "0" + n1s
-    indList = []
-    for i in range(len(n1s)): #Find index of diffDigits
-        if(n1s[i] != n2s[i]):
-            indList.append(i)
-    repDigBool = True
-    if(len(indList)>1):
-        for i in indList[0:len(indList)-1]:
-            if(n1s[i]!=n1s[i+1]): repDigBool = False
-            if(n2s[i]!=n2s[i+1]): repDigBool = False 
-    if(repDigBool):
-        print("Family:", n1s, n2s)
-        print("repDig index:", indList)
-    return
-
-fiveList = pList
-while(len(str(pList[0]))<5):
-    del fiveList[0]
-print(fiveList[0:10])
+et = time.time()
+print(round(et-st , 6), " sec")
